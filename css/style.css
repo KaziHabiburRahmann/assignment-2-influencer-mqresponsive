@@ -1,0 +1,390 @@
+body{
+    margin: 5%;
+    font-family: "Poppins", sans-serif;
+    /* background-color: rgb(250, 245, 245); */
+}
+    
+/* --- Header -- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+.nav-menu li {
+    margin-left: 10px;
+  } 
+
+.h2-logo{
+    display: inline;
+    
+}
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  .nav .nav-menu li a:hover{
+    color: rgb(224,44,109);
+  }
+
+
+/* --- Banner  -- */
+.container{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    margin-bottom: 80px;
+}
+.banner{
+    /* border: 3px solid yellow; */
+    width: 51%;
+}
+.h1-banner{
+    font-size: 42px;
+    padding: 55px 30px 5px 9px;
+    margin-bottom: -15px;
+}
+.banner-p{
+    padding: 5px 20px 10px 10px;
+    margin-bottom: -15px;
+}
+.btn{
+    background-color: rgb(224,44,109);
+    border-radius: 30px;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    width: 180px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: white ;
+    color: rgb(224,44,109);
+    font-size: 18px;
+    width: 200px;
+    border: 1px solid rgb(224,44,109) ;
+}
+
+.banner-photo{
+    border: 2px solid rgb(247,240,255);
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 20px;
+    width: 43%;
+}
+.banner-photo img{
+    width: 100%;
+}
+
+.banner-photo:hover{
+    transform: scale(1.1);
+    transition: transform .5s ease-in-out;
+    }
+
+.logo-container{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid rgb(247,240,255);
+    border-bottom: 2px solid rgb(247,240,255);
+    margin-bottom: 80px;
+}
+.logo{
+    padding: 30px;
+    justify-content: space-evenly;
+}
+/* --- Popular  -- */
+.popular{
+    /* border: 3px solid salmon; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+    margin-top: 50px;
+}
+.collection{
+    /* border: 3px solid blue; */
+    width: 320px;
+    background-color: white;
+    padding: 10px;
+    margin: 18px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+}
+
+.collection:hover{
+transform: scale(1.05);
+transition: transform .5s ease-in-out;
+}
+.collection-img img{
+    width: 100%;
+    text-align: center;
+}
+
+.h3-collection-price{
+    margin: 5px;
+}
+
+.fa-star, .fa-star-half-alt{
+    color: gold;
+    font-size: 10px;
+}
+.p-rating{
+    font-size: 14px;
+}
+.btn-see {
+    text-align: right;
+  }
+.btn-see-more {
+    margin: 2em 3em 1em 1em;
+    background: none;
+    border: none;
+    font-weight: 700;
+    color: rgb(224,44,109);
+    font-size: 14px;
+  }
+
+.btn-see-more:hover {
+    color: rgb(224,44,109);
+    cursor: pointer;
+  }
+
+
+/* --- App  -- */
+.app{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    margin-bottom: 80px;
+}
+.app-image {
+    text-align: center;
+    width: 50%;
+  }
+  .app-image img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .app-image:hover{
+    transform: scale(1.1);
+    transition: transform .5s ease-in-out;
+    }
+
+  .app-download {
+    width: 50%;
+    margin-bottom: 5em;
+    margin-top: 5em;
+  }
+
+  .app-download p {
+    margin: 2em 0;
+  }
+  
+  .btn-app-store {
+    margin-left: 1em;
+  }
+  .fa-apple,
+  .fa-google-play {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  /* --- Footer ---- */
+  
+  footer {
+    background: #0a0826;
+    color: #fff;
+    text-align: center;
+    
+  }
+  .footer{
+    padding: 25px;
+  }
+  .social-links {
+    padding: 0;
+  }
+  
+  .social-links i {
+    padding: 0.5em 0.6em;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    margin: 5px;
+    font-size: 1.75em;
+  }
+
+
+
+/* ----------------
+      Media Query
+  ---------------- */
+
+  @media (min-width: 750px) and (max-width: 1100px) {
+
+
+    .banner-photo img {
+      margin-top: 5em;
+      margin-bottom: 5em;
+    }
+  
+    .header-text {
+      text-align: center;
+    }
+    .logo-container{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .logo img{
+        width: 20%;
+     padding: 20px;
+    }
+    .popular {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .app {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .app-download {
+      text-align: center;
+      margin: 2em auto;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    
+    .body{
+        margin: 2%;
+    }
+    
+    header {
+      padding: 1rem;
+    }
+    nav {
+      justify-content: center;
+    }
+    .nav-menu {
+      display: none;
+    }
+  
+  .container{
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-bottom: 5px;
+  }
+
+  .h1-banner{
+    font-size: 20px;
+    padding: 30px 10px 5px 10px;
+    margin-bottom: -10px;
+
+}
+.banner-p{
+    padding: 5px 10px 10px 10px;
+    font-size: 12px;
+    margin-bottom: -10px;
+
+}
+
+.btn{
+    background-color: rgb(224,44,109);
+    border-radius: 30px;
+    color: white;
+    padding: 9px;
+    font-size: 10px;
+    width: 100px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+    .banner-photo img {
+
+      width: 100%;
+      border-radius: 50%;
+    }
+    .banner-photo:hover{
+        transform: scale(1.1);
+        transition: transform .5s ease-in-out;
+        }
+.logo-container{
+    margin-top: 15px;
+}
+.logo img{
+    width: 25%;
+ padding: 10px;
+}
+
+    .popular {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .collection{
+        /* border: 3px solid blue; */
+        width: 250px;
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+
+  .collection h3, p {
+      font-size: 12px;
+  }
+  .p-rating {
+    font-size: 10px;
+}
+
+    .app {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .app-download {
+      text-align: center;
+      margin: 2em auto;
+    }
+    .btn-app-store {
+        margin-left: 0em;
+        margin-bottom: 5px;
+      }
+      .btn-play-store {
+        margin-bottom: 5px;
+      }
+.fa-apple, .fa-google-play {
+    font-size: 10px;
+    margin-left: 10px;
+}
+footer{
+  margin-bottom: 0px;
+}
+footer h2{
+    font-size: 14px;
+}
+footer p{
+    font-size: 12px;
+}
+.social-links i{
+    width: 25px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+  }
